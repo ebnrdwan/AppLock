@@ -258,6 +258,8 @@ public class AppCheckServices extends Service {
     public void onDestroy() {
         super.onDestroy();
         timer.cancel();
+
+        
         timer = null;
         if (imageView != null) {
             windowManager.removeView(imageView);
